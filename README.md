@@ -17,18 +17,14 @@ tqdm==4.45.0
 
 Train a new model with your map (in the image folder).
 ```
-python main.py --gpu --config config/roomA.json
+python DRnet/main.py --gpu --config config/roomA.json
 
 --gpu                       Activates GPU acceleration for training
 --config                    Path to config file in json format
 
 ```
-python test.py --weights models/trained-model --config config/roomA.json --samples 10
+./DRnet/sripts/eval_single_category.sh
 
---Test                      Path to weights of trained model
---weights                   Path to weights of trained model
---config                    Path to config file in json format (hyperparameters)
---id                        Name for exported files
---samples                   Sampling rate
+
 
 
